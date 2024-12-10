@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+
+    <!--normalize-->
+    <link rel="preload" href="{{ url_for('static', filename='css/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+
+
+    <!--Hoja de estilos-->
+    <link rel="preload" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+
+    <!--Para la barra de navegación-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+   
+    <!--fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <!--barra de navegacion-->
+    <header class="header nav-bg">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+        
+            <a href="#" class="enlace">
+            <img src="{{ url_for('static', filename='images/SEMCE.png') }}" alt="imgaen del logo de SEMCE" class="logo">
+            </a>
+            {% block body %}
+            
+        
+        
+
+
+
+        {% endblock %}
+
+    <footer>
+        <p class="textFooter">2024 SEMCE.<br>Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

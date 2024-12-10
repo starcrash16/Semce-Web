@@ -1,0 +1,41 @@
+{% extends './layout.html' %}
+
+{% block title %} LENGUAJES {% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1>lenguajes de programacion</h1>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    { % for clave in lenguajes: %}
+                        <tr>
+                            <td> {{clave}} <td>
+                            <td> {{loop.index}}</td>
+                        </tr>
+                    {% endfor %}
+                   <<!---
+                    { % for idx, clave in enumerate(lenguajes): }
+                        <tr>
+                            <td> {{clave}} <td>
+                            <td> {{idx}}</td>
+                        </tr>
+                    {% endfor %}
+                   -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

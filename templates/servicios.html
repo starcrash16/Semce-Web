@@ -1,0 +1,57 @@
+{% extends './layout_.html' %}
+
+
+{% block title %} Servicios {% endblock %}
+
+
+{% block body %}
+
+<ul>
+    <li><a class="" href='/'>Inicio</a></li>
+    <li><a class="active" href='/servicios'>Servicios</a></li>
+    <li><a class="" href='/'>Galeria de Proyectos</a></li>
+    <li><a class="" href='/'>Catalogo</a></li>
+    <li><a class="" href='/'>Contacto</a></li>
+          
+</ul>
+</a>
+</nav>
+</header>
+
+<main class="contenedor sombra">
+
+    <div class="contTextos">
+        <h1>Servicios que ofrecemos</h1>
+    </div>
+
+    <!--Contenedor 1 -->
+    <div class="contenedor-cuadricula menu">
+
+        <div class="cuadro cMenu">
+            <a class="active" href='/serviciosCorrectivos'><h2>Correctivos</h2></a>
+            
+            <div class="descripcion">
+                <p>Atendemos correctivos en áreas generales como eléctrico en baja tensión.</p>
+            </div>
+        
+        </div>
+        <div class="cuadro cMenu">
+            <a class="active" href='/refrigeracion'><h2>Refrigeracion</h2></a>
+            <div class="descripcion">
+                <p>Cámaras frías<br>Maquinas de hielo<br>Refrigeradores industriales y comerciales<br>Chillers</p>
+            </div>
+            
+        </div>
+        
+        <div class="cuadro cMenu">
+            <a class="active" href='/aireAcondicionado'><h2>Aire Acondicionado</h2></a>
+            
+            <div class="descripcion">
+                <p>Mini Split<br>Cassete<br>Manejadoras<br>Paquetes</p>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

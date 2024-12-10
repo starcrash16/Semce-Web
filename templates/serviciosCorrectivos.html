@@ -1,0 +1,127 @@
+{% extends './layout_.html' %}
+
+
+{% block title %} Servicios {% endblock %}
+
+
+{% block body %}
+
+<ul>
+    <li><a class="" href='/'>Inicio</a></li>
+    <li><a class="active" href='/servicios'>Servicios</a></li>
+    <li><a class="" href='/'>Galeria de Proyectos</a></li>
+    <li><a class="" href='/'>Catalogo</a></li>
+    <li><a class="" href='/'>Contacto</a></li>
+          
+</ul>
+</a>
+</nav>
+
+</header>
+    <main class="contenedor sombra">
+
+        <div class="contTextos">
+            <h1>Servicios generales correctivos</h1>
+        </div>
+
+        <!--Contenedor 1 -->
+        <div class="contenedor-cuadricula ">
+            <div class="cuadro">
+                <h2>Cambio de luminarias aéreas </h2>
+                <p>Mantén tus espacios bien iluminados con nuestro servicio especializado en el cambio de luminarias aéreas. Reemplazamos de manera eficiente sistemas de iluminación en zonas elevadas para asegurar una visibilidad óptima y segura.</p>
+            </div>
+
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    {
+                    <img src="{{ url_for('static', filename='images/luminaria.jpg') }}" alt="Imagen de luces empresariales" class="imagenProyecto">
+                </div>
+            </div>
+
+        </div>
+
+       <!--Contenedor 2-->
+       <div class="contenedor-cuadricula ">
+
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    <img src="{{ url_for('static', filename='images/laminas.jpg') }}" alt="Imagen de un láminas translúcidas" class="imagenProyecto">
+                </div>
+            </div>
+
+            <div class="cuadro">
+                <h2>Cambio de Láminas Translúcidas</h2>
+                <p>
+                    El cambio de láminas translúcidas es esencial para mantener una iluminación natural eficiente en techos y estructuras, mejorando el confort y la seguridad. Ofrecemos la instalación y sustitución de láminas deterioradas para garantizar su resistencia y durabilidad.
+                </p>
+            </div>
+       </div>
+
+       <!--contendor 3-->
+        <div class="contenedor-cuadricula ">
+            <div class="cuadro">
+                <h2> Aplicación de Pintura</h2>
+                <p>Nuestro servicio de aplicación de pintura está diseñado para renovar y proteger superficies, ya sea en interiores o exteriores. Utilizamos productos de alta calidad que garantizan una excelente cobertura y resistencia a las condiciones climáticas.</p>
+            </div>
+
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    <img src="{{ url_for('static', filename='images/appPintura.jpg') }}" alt="Imagen de una personando aplicando una capa de pintura" class="imagenProyecto">
+                </div>
+            </div>
+
+        </div>
+
+        <!--contendor 4-->
+        <div class="contenedor-cuadricula ">
+
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    <img src="{{ url_for('static', filename='images/lonas.jpg') }}" alt="Imagen de un hombre instalando una lona" class="imagenProyecto">
+                </div>
+            </div>
+
+            <div class="cuadro">
+                <h2>Lonas</h2>
+                <p>Instalamos y reparamos lonas para brindar protección contra el sol, lluvia y otras condiciones adversas. Nuestras lonas son duraderas, adaptables a diferentes tipos de espacios y perfectas para soluciones comerciales y residenciales.</p>
+            </div>
+        </div>
+        <!--contendor 5-->
+        <div class="contenedor-cuadricula ">
+            <div class="cuadro">
+                <h2>Solduras</h2>
+                <p>Ofrecemos servicios de soldadura especializados para estructuras metálicas, asegurando uniones fuertes y duraderas. Nuestro equipo utiliza técnicas avanzadas para reparar o fabricar piezas con precisión y seguridad.</p>
+            </div>
+
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    <img src="{{ url_for('static', filename='images/soldadura.jpg') }}" alt="Imagen de una persona soldando" class="imagenProyecto">
+                </div>
+            </div>
+
+        </div>
+
+        <!--contendor 5-->
+        <div class="contenedor-cuadricula ">
+            <div class="cuadro contimagen">
+                <div class="contenedor-imagenesProyectos">
+                    <img src="{{ url_for('static', filename='images/voltaje.jpg') }}" alt="Imagen de un medidor de voltaje en una casa" class="imagenProyecto">
+                </div>
+            </div>
+
+            <div class="cuadro">
+                <h2>Revisiones de Voltaje</h2>
+                <p>Las revisiones de voltaje son cruciales para garantizar la seguridad y el correcto funcionamiento de los sistemas eléctricos. Realizamos inspecciones y mediciones detalladas para detectar posibles fallas y evitar sobrecargas o daños en tus equipos.</p>
+            </div>
+        </div>
+
+        <div class="flotante">
+            <h3>¿Te interesa alguno de estos servicios?</h3>
+            <!--Clase de boton para generar dos iguales-->
+            <a class="boton flotante-btn" href="/">  Contáctanos</a>
+        </div>
+        
+
+    </main>
+
+    {% endblock %}
