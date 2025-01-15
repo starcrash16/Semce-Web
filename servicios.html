@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMCE</title>
+    <link rel="icon" type="image/x-icon" href="images/SEMCE.png">
+    <!-- normalize -->
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Hoja de estilos -->
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Para la barra de navegación -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <!-- barra de navegación -->
+    <header class="header nav-bg">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <a href="index_.html" class="enlace">
+                <img src="images/SEMCE.png" alt="imagen del logo de SEMCE" class="logo">
+            </a>
+            <span class="email">E-mail: semce2024@gmail.com</span> <!-- Agregado -->
+
+            <ul>
+                <li><a class="" href='index_.html'>Inicio</a></li>
+                <li><a class="active" href='servicios.html'>Servicios</a></li>
+                <li><a class="" href='galeriaProyectos.html'>Galeria de Proyectos</a></li>
+                <li><a class="" href='catalogo.html'>Catalogo</a></li>
+                <li><a class="" href='https://wa.me/524493575845?text=Me%20interesa%20contratar%20tus%20servicios'>Contacto</a></li>
+                    
+            </ul>
+            </a>
+        </nav>
+    </header>
+
+<main class="contenedor sombra">
+
+    <div class="contTextos">
+        <h1>Servicios que ofrecemos</h1>
+    </div>
+
+    <!--Contenedor 1 -->
+    <div class="contenedor-cuadricula menu">
+
+        <div class="cuadro cMenu">
+            <a class="active" href='serviciosCorrectivos.html'><h2>Correctivo<br>y<br>Preventivo </h2></a>
+            <div class="descripcion">
+                <p>Mantenimiento preventivo y correctivo en baja tensión, con soluciones rápidas y efectivas.</p>
+            </div>
+        </div>
+
+        <div class="cuadro cMenu">
+            <!---  -->
+            <a class="active" href='Refrigeracion.html'><h2>Refrigeracion</h2></a>
+            <div class="descripcion">
+                <p>Cámaras frías<br>Maquinas de hielo<br>Refrigeradores industriales y comerciales<br>Chillers</p>
+            </div>
+            
+        </div>
+        
+        <div class="cuadro cMenu">
+            <a class="active" href='aireAcond.html'><h2>Aire Acondicionado</h2></a>
+            
+            <div class="descripcion">
+                <p>Mini Split<br>Cassete<br>Manejadoras<br>Paquetes</p>
+            </div>
+        </div>
+
+        <div class="cuadro cMenu emergenciaC">
+            <h2>Emergencia</h2>
+
+            <div class="descripcion emergenciaCC">
+                <p> Atendemos servicios urgentes para garantizar la operación inmediata de tus equipos de refrigeración cuando más lo necesitas.</p>
+            </div>
+            <a class="boton emergenciaCCC" href="https://wa.me/524493575845?text=Tengo%20una%20emergencia%20" class="btn-whatsapp" target="_blank">Solicitar Servicio</a>
+        </div>
+    </div>
+
+    <button class="btn-whatsapp" id="openChat">
+        <img src="images/whatsApp.png" alt="Abrir chat"> <!--logo de whatsapp, asegúrate de que la ruta de la imagen sea correcta -->
+    </button>
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            Contactar a WhatsApp
+            <button class="close-chat" id="closeChat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div id="chatMessage" class="chat-text">
+                ¡Hola! Me interesa contratar tus servicios.
+            </div>
+            <button class="send-button" id="sendMessage">
+                <img src="images/enviar.png" alt="Enviar mensaje"> <!--logo de enviar de whatsapp, asegúrate de que la ruta de la imagen sea correcta -->
+            </button>
+        </div>
+    </div>
+</main>
+    <script src="scripts/wats.js"></script>   
+ 
+ <footer>
+     <p class="textFooter">2024 SEMCE.<br>Todos los derechos reservados.</p>
+ </footer>
+ </body>
+ </html>
