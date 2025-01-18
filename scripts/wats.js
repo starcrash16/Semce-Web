@@ -10,6 +10,6 @@ document.getElementById('closeChat').addEventListener('click', () => {
 // Redirigir a WhatsApp al hacer clic en "Enviar"
 document.getElementById('sendMessage').addEventListener('click', () => {
     const message = encodeURIComponent(document.getElementById('chatMessage').textContent);
-    const phoneNumber = '524493575845'; // Cambia este número al deseado
+    const phoneNumber = '524491505095'; // Cambia este número al deseado
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 });
